@@ -3,7 +3,7 @@ from discord.ext import commands
 
 prefix = input('enter the msg u want: ')
 token = input('enter ur token: ')
-id = input('enter ur id: ')
+iurd = input('enter ur id: ')
 
 intents = discord.Intents.default()
 intents.members=True
@@ -20,7 +20,7 @@ async def on_ready():
     
 @client.command()
 async def massdm(ctx,*,msg):
-    if ctx.author.id != id:
+    if ctx.author.id != urid:
         pass
     else:
         for member in ctx.guild.membes:
