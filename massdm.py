@@ -23,7 +23,7 @@ async def massdm(ctx,*,msg):
     if ctx.author.id != urid:
         pass
     else:
-        for member in ctx.guild.membes:
+        for member in ctx.guild.members:
             await member.send(msg + member.mention)
            
 try:
